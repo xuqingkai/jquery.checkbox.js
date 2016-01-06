@@ -62,6 +62,7 @@ $(按钮选择符).check(被操作复选框选择符,回调匿名函数);
 	<input type="button" value="全选" data-check="yes" />
 	<input type="button" value="全不选" data-check="no" />
 	<input type="button" value="反选" data-check="reverse" />
+	<input type="button" value="自动选择" data-check="" />
   ```
 ###你是干什么的？
 别问我是谁，请叫我偶喷讷，具体联系方式请查阅：http://www.xuqingkai.com
