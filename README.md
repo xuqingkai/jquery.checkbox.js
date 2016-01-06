@@ -5,13 +5,13 @@
 ###三，给我个示例代码看看
 ####  1，js代码
 ```javascript
-  <script src="js/jquery-1.11.3.min.js"></script>
+	<script src="js/jquery-1.11.3.min.js"></script>
 	<script src="js/jquery.check.js"></script>
 	<script type="text/javascript">
 	;$(function(){
 		$('[data-check]').check('input[name=id]');
 	});
-  </script>
+  	</script>
   ```
 ####  2，html代码
   ```html
@@ -43,5 +43,15 @@
 ###这到底是什么意思
 ####  用法1
 $(按钮选择符).check(被操作input选择符);
+如：
+```javascript
+	$('#div1 input:button').check('#form1 input[name=id]');
+```
 ####  用法2
-$(按钮选择符).check(被操作input选择符,回调匿名函数);
+$(按钮选择符).check(被操作复选框选择符,回调匿名函数);
+```javascript
+	$('#div1 input:button').check('#form1 input[name=id]',function(checkbox){
+		alert('你当前操作的按钮是' + $(this));
+		alert('被操作的复选框总计' + checkbox.length + '个');
+	});
+```
