@@ -3,6 +3,7 @@
 # 到底怎么使用
 很简单，第一步，引入jQuery类库，第二步引入本插件，第三步，指定实现按钮（+回调函数）
 #给我个示例代码看看
+```javascript
   <script src="js/jquery-1.11.3.min.js"></script>
 	<script src="js/jquery.check.js"></script>
 	<script type="text/javascript">
@@ -10,3 +11,4 @@
 		$('[data-check]').check('input[name=id]');
 	});
   </script>
+  ```
